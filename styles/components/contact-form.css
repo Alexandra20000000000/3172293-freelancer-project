@@ -1,0 +1,139 @@
+/* Contenedor principal */
+/* ====================================================== */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #50e5f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    margin: 40px auto 0 auto;
+}
+
+@media (width > 768px){
+    .services{
+        width: 80vw;
+    }
+}
+
+
+.services-form-container {
+    width: 80vw;
+}
+.services__form-container {
+    margin: 0 auto 24px ;
+    padding-bottom: 100px;
+    width: 70vw;
+}
+
+/* Titulo */
+/* ====================================================== */
+.services__contact-title,
+.services__title {
+    text-align: center;
+}
+
+/* Formulario */
+/* ====================================================== */
+
+.contact-form {
+    display: grid;
+    gap: 24px;
+    background-color: var(--gray-700);
+    margin: 0 24px;
+    border-radius: 4px;
+    color: white;
+}
+
+.contact-form__title {
+    padding-top: 24px;
+    text-align: center;
+    color: #50e5f9;
+}
+
+
+.contact-form__form {
+    display: grid;
+    gap: 24px;
+    margin: 24px;
+    padding-bottom: 24px;
+}
+
+.contact-form__row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (width > 768px){
+    .contact-form__row {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+.contact-form__label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: var(--fs-xxxxs);
+}
+
+
+
+/* Titulo */
+/* ====================================================== */
+
+.contact-form__input {
+    height: 48px;
+    border-radius: 4px;
+    padding: 16px;
+    font-size: var(--fs-xs);
+}
+
+
+.contact-form__text-area {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+/* Buttons */
+/* ====================================================== */
+
+
+.contact-form__actions{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (width > 768px) {
+    .contact-form__actions{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.contact-form__button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+}
+
+.contact-form__button:hover {
+    background-color: var(--tertiary-400);
+}
+
+.contact-form__button--green {
+    background-color: var(--primary-700);
+    color: var(--white);
+}
+
+.footer {
+    text-align: center;
+    font-size: var(--fs-xxs);
+}
+
+

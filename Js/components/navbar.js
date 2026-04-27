@@ -29,6 +29,6 @@ document.addEventListener("DOMContentLoaded", function(){
                     }
                 });
         })
-                .catch(error => console.log("Error cargando el navbar"))
+                .catch(error => console.log("Error cargando el navbar", error));
             
 })
